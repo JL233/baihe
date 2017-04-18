@@ -91,10 +91,4 @@ class BhDao:
         return data
 
 
-if __name__ == '__main__':
-    dao = BhDao()
-    print(dao.login())
-    index=100
-    result=dao.search(index)
-    for user in result["data"]["result"]:
-        print(dao.send(user["userID"],"你好，诚心交友，认识一下吧!"))
+
